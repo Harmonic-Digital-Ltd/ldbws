@@ -1,0 +1,7 @@
+.php-cs-fixer.cache
+.php-cs-fixer.php
+composer.phar
+/vendor/
+.phpunit.result.cache
+.phpunit.cache
+

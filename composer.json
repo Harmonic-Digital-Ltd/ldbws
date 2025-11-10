@@ -1,0 +1,33 @@
+{
+    "name": "harmonicdigital/ldbws",
+    "description": "An implementation to consume the Live Departure Board Web Service by National Rail",
+    "type": "library",
+    "config": {
+        "sort-packages": true
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "HarmonicDigital\\Ldbws\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "HarmonicDigital\\Ldbws\\Tests\\": "tests/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Rick Ogden",
+            "email": "rick@harmonicdigital.uk"
+        }
+    ],
+    "require": {
+        "psr/http-client": "^1.0"
+    },
+    "require-dev": {
+        "vimeo/psalm": "^6.13",
+        "phpunit/phpunit": "^12.4",
+        "friendsofphp/php-cs-fixer": "^3.89"
+    }
+}
