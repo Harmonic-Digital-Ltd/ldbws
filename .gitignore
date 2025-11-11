@@ -4,4 +4,5 @@ composer.phar
 /vendor/
 .phpunit.result.cache
 .phpunit.cache
+composer.lock
 
