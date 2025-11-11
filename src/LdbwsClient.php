@@ -12,6 +12,7 @@ use HarmonicDigital\Ldbws\Factory\ResponseFactory;
 use HarmonicDigital\Ldbws\Factory\ResponseFactoryInterface;
 use HarmonicDigital\Ldbws\Response\FilterType;
 use HarmonicDigital\Ldbws\Response\StationBoard;
+use HarmonicDigital\Ldbws\Response\StationBoardWithDetails;
 use Psr\Log\LoggerInterface;
 use Psr\Log\NullLogger;
 
@@ -53,6 +54,26 @@ final readonly class LdbwsClient
         return $this->responseFactory->parseStationBoard($data);
     }
 
+    public function getDepartureBoardWithDetails(
+        string $crs,
+        ?int $numRows = null,
+        ?string $filterCrs = null,
+        ?FilterType $filterType = null,
+        ?int $timeOffset = null,
+        ?int $timeWindow = null,
+    ): StationBoardWithDetails {
+        $url = self::BASE_URL.'/GetDepBoardWithDetails/'.$crs;
+        $data = $this->makeRequest($url, [
+            'numRows' => $numRows,
+            'filterCrs' => $filterCrs,
+            'filterType' => $filterType?->value,
+            'timeOffset' => $timeOffset,
+            'timeWindow' => $timeWindow,
+        ]);
+
+        return $this->responseFactory->parseStationBoardWithDetails($data);
+    }
+
     /**
      * @return array<string, mixed>
      *
@@ -80,7 +101,7 @@ final readonly class LdbwsClient
         $context['status_code'] = $response->getStatusCode();
         $this->logger->debug('<- '.$uri, $context);
 
-        // @var array<string, mixed>
+        /** @var array<string, mixed> */
         return \json_decode($body, true, 512, \JSON_THROW_ON_ERROR);
     }
 }

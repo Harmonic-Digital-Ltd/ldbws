@@ -9,15 +9,17 @@ final readonly class CallingPoint implements Station
     public function __construct(
         public string $locationName,
         public string $crs,
-        public ?\DateTimeImmutable $st = null,
-        public ?\DateTimeImmutable $et = null,
-        public ?\DateTimeImmutable $at = null,
+        public ?string $st = null,
+        public ?string $et = null,
+        public ?string $at = null,
         public bool $isCancelled = false,
         public int $length = 0,
         public bool $detachFront = false,
         public ?FormationData $formation = null,
         public bool $affectedByDiversion = false,
         public int $rerouteDelay = 0,
+        /** @var list<string> */
+        public array $adhocAlerts = [],
     ) {}
 
     #[\Override]

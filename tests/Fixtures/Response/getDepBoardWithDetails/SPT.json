@@ -1,0 +1,1048 @@
+{
+    "trainServices": [
+        {
+            "subsequentCallingPoints": [
+                {
+                    "callingPoint": [
+                        {
+                            "locationName": "Manchester Piccadilly",
+                            "crs": "MAN",
+                            "st": "15:19",
+                            "et": "15:24",
+                            "isCancelled": false,
+                            "length": 0,
+                            "detachFront": false,
+                            "affectedByDiversion": false,
+                            "rerouteDelay": 0
+                        }
+                    ],
+                    "serviceType": "train",
+                    "serviceChangeRequired": false,
+                    "assocIsCancelled": false
+                }
+            ],
+            "futureCancellation": false,
+            "futureDelay": false,
+            "origin": [
+                {
+                    "locationName": "London Euston",
+                    "crs": "EUS",
+                    "assocIsCancelled": false
+                }
+            ],
+            "destination": [
+                {
+                    "locationName": "Manchester Piccadilly",
+                    "crs": "MAN",
+                    "assocIsCancelled": false
+                }
+            ],
+            "std": "15:10",
+            "etd": "15:16",
+            "platform": "3",
+            "operator": "Avanti West Coast",
+            "operatorCode": "VT",
+            "isCircularRoute": false,
+            "isCancelled": false,
+            "filterLocationCancelled": false,
+            "serviceType": "train",
+            "length": 0,
+            "detachFront": false,
+            "isReverseFormation": false,
+            "serviceID": "2463453STKP____"
+        },
+        {
+            "subsequentCallingPoints": [
+                {
+                    "callingPoint": [
+                        {
+                            "locationName": "Macclesfield",
+                            "crs": "MAC",
+                            "st": "15:25",
+                            "et": "On time",
+                            "isCancelled": false,
+                            "length": 0,
+                            "detachFront": false,
+                            "affectedByDiversion": false,
+                            "rerouteDelay": 0
+                        },
+                        {
+                            "locationName": "Stoke-on-Trent",
+                            "crs": "SOT",
+                            "st": "15:43",
+                            "et": "On time",
+                            "isCancelled": false,
+                            "length": 0,
+                            "detachFront": false,
+                            "affectedByDiversion": false,
+                            "rerouteDelay": 0
+                        },
+                        {
+                            "locationName": "Stafford",
+                            "crs": "STA",
+                            "st": "15:59",
+                            "et": "On time",
+                            "isCancelled": false,
+                            "length": 0,
+                            "detachFront": false,
+                            "affectedByDiversion": false,
+                            "rerouteDelay": 0
+                        },
+                        {
+                            "locationName": "Wolverhampton",
+                            "crs": "WVH",
+                            "st": "16:13",
+                            "et": "On time",
+                            "isCancelled": false,
+                            "length": 0,
+                            "detachFront": false,
+                            "affectedByDiversion": false,
+                            "rerouteDelay": 0
+                        },
+                        {
+                            "locationName": "Birmingham New Street",
+                            "crs": "BHM",
+                            "st": "16:33",
+                            "et": "On time",
+                            "isCancelled": false,
+                            "length": 0,
+                            "detachFront": false,
+                            "affectedByDiversion": false,
+                            "rerouteDelay": 0
+                        },
+                        {
+                            "locationName": "Worcestershire Parkway",
+                            "crs": "WOP",
+                            "st": "17:12",
+                            "et": "On time",
+                            "isCancelled": false,
+                            "length": 0,
+                            "detachFront": false,
+                            "affectedByDiversion": false,
+                            "rerouteDelay": 0
+                        },
+                        {
+                            "locationName": "Cheltenham Spa",
+                            "crs": "CNM",
+                            "st": "17:29",
+                            "et": "On time",
+                            "isCancelled": false,
+                            "length": 0,
+                            "detachFront": false,
+                            "affectedByDiversion": false,
+                            "rerouteDelay": 0
+                        },
+                        {
+                            "locationName": "Bristol Parkway",
+                            "crs": "BPW",
+                            "st": "17:59",
+                            "et": "On time",
+                            "isCancelled": false,
+                            "length": 0,
+                            "detachFront": false,
+                            "affectedByDiversion": false,
+                            "rerouteDelay": 0
+                        },
+                        {
+                            "locationName": "Bristol Temple Meads",
+                            "crs": "BRI",
+                            "st": "18:09",
+                            "et": "On time",
+                            "isCancelled": false,
+                            "length": 0,
+                            "detachFront": false,
+                            "affectedByDiversion": false,
+                            "rerouteDelay": 0
+                        }
+                    ],
+                    "serviceType": "train",
+                    "serviceChangeRequired": false,
+                    "assocIsCancelled": false
+                }
+            ],
+            "futureCancellation": false,
+            "futureDelay": false,
+            "origin": [
+                {
+                    "locationName": "Manchester Piccadilly",
+                    "crs": "MAN",
+                    "assocIsCancelled": false
+                }
+            ],
+            "destination": [
+                {
+                    "locationName": "Bristol Temple Meads",
+                    "crs": "BRI",
+                    "via": "via Stoke-on-Trent",
+                    "assocIsCancelled": false
+                }
+            ],
+            "std": "15:13",
+            "etd": "On time",
+            "platform": "2",
+            "operator": "CrossCountry",
+            "operatorCode": "XC",
+            "isCircularRoute": false,
+            "isCancelled": false,
+            "filterLocationCancelled": false,
+            "serviceType": "train",
+            "length": 0,
+            "detachFront": false,
+            "isReverseFormation": false,
+            "serviceID": "2472865STKP____"
+        },
+        {
+            "subsequentCallingPoints": [
+                {
+                    "callingPoint": [
+                        {
+                            "locationName": "Manchester Piccadilly",
+                            "crs": "MAN",
+                            "st": "15:25",
+                            "et": "On time",
+                            "isCancelled": false,
+                            "length": 2,
+                            "detachFront": false,
+                            "affectedByDiversion": false,
+                            "rerouteDelay": 0
+                        }
+                    ],
+                    "serviceType": "train",
+                    "serviceChangeRequired": false,
+                    "assocIsCancelled": false
+                }
+            ],
+            "futureCancellation": false,
+            "futureDelay": false,
+            "origin": [
+                {
+                    "locationName": "Chester",
+                    "crs": "CTR",
+                    "assocIsCancelled": false
+                }
+            ],
+            "destination": [
+                {
+                    "locationName": "Manchester Piccadilly",
+                    "crs": "MAN",
+                    "assocIsCancelled": false
+                }
+            ],
+            "std": "15:15",
+            "etd": "On time",
+            "platform": "4",
+            "operator": "Northern",
+            "operatorCode": "NT",
+            "isCircularRoute": false,
+            "isCancelled": false,
+            "filterLocationCancelled": false,
+            "serviceType": "train",
+            "length": 2,
+            "detachFront": false,
+            "isReverseFormation": false,
+            "serviceID": "2485673STKP____"
+        },
+        {
+            "subsequentCallingPoints": [
+                {
+                    "callingPoint": [
+                        {
+                            "locationName": "Navigation Road",
+                            "crs": "NVR",
+                            "st": "15:33",
+                            "et": "On time",
+                            "isCancelled": false,
+                            "length": 2,
+                            "detachFront": false,
+                            "affectedByDiversion": false,
+                            "rerouteDelay": 0
+                        },
+                        {
+                            "locationName": "Altrincham",
+                            "crs": "ALT",
+                            "st": "15:36",
+                            "et": "On time",
+                            "isCancelled": false,
+                            "length": 2,
+                            "detachFront": false,
+                            "affectedByDiversion": false,
+                            "rerouteDelay": 0
+                        },
+                        {
+                            "locationName": "Hale",
+                            "crs": "HAL",
+                            "st": "15:39",
+                            "et": "On time",
+                            "isCancelled": false,
+                            "length": 2,
+                            "detachFront": false,
+                            "affectedByDiversion": false,
+                            "rerouteDelay": 0
+                        },
+                        {
+                            "locationName": "Ashley",
+                            "crs": "ASY",
+                            "st": "15:43",
+                            "et": "On time",
+                            "isCancelled": false,
+                            "length": 2,
+                            "detachFront": false,
+                            "affectedByDiversion": false,
+                            "rerouteDelay": 0
+                        },
+                        {
+                            "locationName": "Mobberley",
+                            "crs": "MOB",
+                            "st": "15:49",
+                            "et": "On time",
+                            "isCancelled": false,
+                            "length": 2,
+                            "detachFront": false,
+                            "affectedByDiversion": false,
+                            "rerouteDelay": 0
+                        },
+                        {
+                            "locationName": "Knutsford",
+                            "crs": "KNF",
+                            "st": "15:54",
+                            "et": "On time",
+                            "isCancelled": false,
+                            "length": 2,
+                            "detachFront": false,
+                            "affectedByDiversion": false,
+                            "rerouteDelay": 0
+                        },
+                        {
+                            "locationName": "Plumley",
+                            "crs": "PLM",
+                            "st": "15:58",
+                            "et": "On time",
+                            "isCancelled": false,
+                            "length": 2,
+                            "detachFront": false,
+                            "affectedByDiversion": false,
+                            "rerouteDelay": 0
+                        },
+                        {
+                            "locationName": "Lostock Gralam",
+                            "crs": "LTG",
+                            "st": "16:02",
+                            "et": "On time",
+                            "isCancelled": false,
+                            "length": 2,
+                            "detachFront": false,
+                            "affectedByDiversion": false,
+                            "rerouteDelay": 0
+                        },
+                        {
+                            "locationName": "Northwich",
+                            "crs": "NWI",
+                            "st": "16:06",
+                            "et": "On time",
+                            "isCancelled": false,
+                            "length": 2,
+                            "detachFront": false,
+                            "affectedByDiversion": false,
+                            "rerouteDelay": 0
+                        },
+                        {
+                            "locationName": "Greenbank",
+                            "crs": "GBK",
+                            "st": "16:11",
+                            "et": "On time",
+                            "isCancelled": false,
+                            "length": 2,
+                            "detachFront": false,
+                            "affectedByDiversion": false,
+                            "rerouteDelay": 0
+                        },
+                        {
+                            "locationName": "Cuddington",
+                            "crs": "CUD",
+                            "st": "16:16",
+                            "et": "On time",
+                            "isCancelled": false,
+                            "length": 2,
+                            "detachFront": false,
+                            "affectedByDiversion": false,
+                            "rerouteDelay": 0
+                        },
+                        {
+                            "locationName": "Delamere",
+                            "crs": "DLM",
+                            "st": "16:21",
+                            "et": "On time",
+                            "isCancelled": false,
+                            "length": 2,
+                            "detachFront": false,
+                            "affectedByDiversion": false,
+                            "rerouteDelay": 0
+                        },
+                        {
+                            "locationName": "Mouldsworth",
+                            "crs": "MLD",
+                            "st": "16:26",
+                            "et": "On time",
+                            "isCancelled": false,
+                            "length": 2,
+                            "detachFront": false,
+                            "affectedByDiversion": false,
+                            "rerouteDelay": 0
+                        },
+                        {
+                            "locationName": "Chester",
+                            "crs": "CTR",
+                            "st": "16:37",
+                            "et": "On time",
+                            "isCancelled": false,
+                            "length": 2,
+                            "detachFront": false,
+                            "affectedByDiversion": false,
+                            "rerouteDelay": 0
+                        }
+                    ],
+                    "serviceType": "train",
+                    "serviceChangeRequired": false,
+                    "assocIsCancelled": false
+                }
+            ],
+            "futureCancellation": false,
+            "futureDelay": false,
+            "origin": [
+                {
+                    "locationName": "Manchester Piccadilly",
+                    "crs": "MAN",
+                    "assocIsCancelled": false
+                }
+            ],
+            "destination": [
+                {
+                    "locationName": "Chester",
+                    "crs": "CTR",
+                    "assocIsCancelled": false
+                }
+            ],
+            "std": "15:19",
+            "etd": "On time",
+            "platform": "2",
+            "operator": "Northern",
+            "operatorCode": "NT",
+            "isCircularRoute": false,
+            "isCancelled": false,
+            "filterLocationCancelled": false,
+            "serviceType": "train",
+            "length": 2,
+            "detachFront": false,
+            "isReverseFormation": false,
+            "serviceID": "2474541STKP____"
+        },
+        {
+            "subsequentCallingPoints": [
+                {
+                    "callingPoint": [
+                        {
+                            "locationName": "Cheadle Hulme",
+                            "crs": "CHU",
+                            "st": "15:23",
+                            "et": "On time",
+                            "isCancelled": false,
+                            "length": 3,
+                            "detachFront": false,
+                            "affectedByDiversion": false,
+                            "rerouteDelay": 0
+                        },
+                        {
+                            "locationName": "Handforth",
+                            "crs": "HTH",
+                            "st": "15:28",
+                            "et": "On time",
+                            "isCancelled": false,
+                            "length": 3,
+                            "detachFront": false,
+                            "affectedByDiversion": false,
+                            "rerouteDelay": 0
+                        },
+                        {
+                            "locationName": "Wilmslow",
+                            "crs": "WML",
+                            "st": "15:30",
+                            "et": "On time",
+                            "isCancelled": false,
+                            "length": 3,
+                            "detachFront": false,
+                            "affectedByDiversion": false,
+                            "rerouteDelay": 0
+                        },
+                        {
+                            "locationName": "Alderley Edge",
+                            "crs": "ALD",
+                            "st": "15:34",
+                            "et": "On time",
+                            "isCancelled": false,
+                            "length": 3,
+                            "detachFront": false,
+                            "affectedByDiversion": false,
+                            "rerouteDelay": 0
+                        },
+                        {
+                            "locationName": "Chelford",
+                            "crs": "CEL",
+                            "st": "15:38",
+                            "et": "On time",
+                            "isCancelled": false,
+                            "length": 3,
+                            "detachFront": false,
+                            "affectedByDiversion": false,
+                            "rerouteDelay": 0
+                        },
+                        {
+                            "locationName": "Goostrey",
+                            "crs": "GTR",
+                            "st": "15:43",
+                            "et": "On time",
+                            "isCancelled": false,
+                            "length": 3,
+                            "detachFront": false,
+                            "affectedByDiversion": false,
+                            "rerouteDelay": 0
+                        },
+                        {
+                            "locationName": "Holmes Chapel",
+                            "crs": "HCH",
+                            "st": "15:46",
+                            "et": "On time",
+                            "isCancelled": false,
+                            "length": 3,
+                            "detachFront": false,
+                            "affectedByDiversion": false,
+                            "rerouteDelay": 0
+                        },
+                        {
+                            "locationName": "Sandbach",
+                            "crs": "SDB",
+                            "st": "15:51",
+                            "et": "On time",
+                            "isCancelled": false,
+                            "length": 3,
+                            "detachFront": false,
+                            "affectedByDiversion": false,
+                            "rerouteDelay": 0
+                        },
+                        {
+                            "locationName": "Crewe",
+                            "crs": "CRE",
+                            "st": "15:58",
+                            "et": "On time",
+                            "isCancelled": false,
+                            "length": 3,
+                            "detachFront": false,
+                            "affectedByDiversion": false,
+                            "rerouteDelay": 0
+                        }
+                    ],
+                    "serviceType": "train",
+                    "serviceChangeRequired": false,
+                    "assocIsCancelled": false
+                }
+            ],
+            "futureCancellation": false,
+            "futureDelay": false,
+            "origin": [
+                {
+                    "locationName": "Manchester Piccadilly",
+                    "crs": "MAN",
+                    "assocIsCancelled": false
+                }
+            ],
+            "destination": [
+                {
+                    "locationName": "Crewe",
+                    "crs": "CRE",
+                    "via": "via Wilmslow",
+                    "assocIsCancelled": false
+                }
+            ],
+            "std": "15:19",
+            "etd": "On time",
+            "platform": "1",
+            "operator": "Northern",
+            "operatorCode": "NT",
+            "isCircularRoute": false,
+            "isCancelled": false,
+            "filterLocationCancelled": false,
+            "serviceType": "train",
+            "length": 3,
+            "detachFront": false,
+            "isReverseFormation": false,
+            "serviceID": "2484603STKP____"
+        },
+        {
+            "subsequentCallingPoints": [
+                {
+                    "callingPoint": [
+                        {
+                            "locationName": "Manchester Piccadilly",
+                            "crs": "MAN",
+                            "st": "15:29",
+                            "et": "15:31",
+                            "isCancelled": false,
+                            "length": 0,
+                            "detachFront": false,
+                            "affectedByDiversion": false,
+                            "rerouteDelay": 0
+                        }
+                    ],
+                    "serviceType": "train",
+                    "serviceChangeRequired": false,
+                    "assocIsCancelled": false
+                }
+            ],
+            "futureCancellation": false,
+            "futureDelay": false,
+            "origin": [
+                {
+                    "locationName": "Bournemouth",
+                    "crs": "BMH",
+                    "assocIsCancelled": false
+                }
+            ],
+            "destination": [
+                {
+                    "locationName": "Manchester Piccadilly",
+                    "crs": "MAN",
+                    "assocIsCancelled": false
+                }
+            ],
+            "std": "15:19",
+            "etd": "15:23",
+            "platform": "3",
+            "operator": "CrossCountry",
+            "operatorCode": "XC",
+            "isCircularRoute": false,
+            "isCancelled": false,
+            "filterLocationCancelled": false,
+            "serviceType": "train",
+            "length": 0,
+            "detachFront": false,
+            "isReverseFormation": false,
+            "serviceID": "2472419STKP____"
+        },
+        {
+            "subsequentCallingPoints": [
+                {
+                    "callingPoint": [
+                        {
+                            "locationName": "Macclesfield",
+                            "crs": "MAC",
+                            "st": "15:36",
+                            "et": "On time",
+                            "isCancelled": false,
+                            "length": 0,
+                            "detachFront": false,
+                            "affectedByDiversion": false,
+                            "rerouteDelay": 0
+                        },
+                        {
+                            "locationName": "Stoke-on-Trent",
+                            "crs": "SOT",
+                            "st": "15:52",
+                            "et": "On time",
+                            "isCancelled": false,
+                            "length": 0,
+                            "detachFront": false,
+                            "affectedByDiversion": false,
+                            "rerouteDelay": 0
+                        },
+                        {
+                            "locationName": "Rugby",
+                            "crs": "RUG",
+                            "st": "16:33",
+                            "et": "On time",
+                            "isCancelled": false,
+                            "length": 0,
+                            "detachFront": false,
+                            "affectedByDiversion": false,
+                            "rerouteDelay": 0
+                        },
+                        {
+                            "locationName": "Milton Keynes Central",
+                            "crs": "MKC",
+                            "st": "16:53",
+                            "et": "On time",
+                            "isCancelled": false,
+                            "length": 0,
+                            "detachFront": false,
+                            "affectedByDiversion": false,
+                            "rerouteDelay": 0
+                        },
+                        {
+                            "locationName": "London Euston",
+                            "crs": "EUS",
+                            "st": "17:27",
+                            "et": "On time",
+                            "isCancelled": false,
+                            "length": 0,
+                            "detachFront": false,
+                            "affectedByDiversion": false,
+                            "rerouteDelay": 0
+                        }
+                    ],
+                    "serviceType": "train",
+                    "serviceChangeRequired": false,
+                    "assocIsCancelled": false
+                }
+            ],
+            "futureCancellation": false,
+            "futureDelay": false,
+            "origin": [
+                {
+                    "locationName": "Manchester Piccadilly",
+                    "crs": "MAN",
+                    "assocIsCancelled": false
+                }
+            ],
+            "destination": [
+                {
+                    "locationName": "London Euston",
+                    "crs": "EUS",
+                    "assocIsCancelled": false
+                }
+            ],
+            "std": "15:24",
+            "etd": "On time",
+            "platform": "2",
+            "operator": "Avanti West Coast",
+            "operatorCode": "VT",
+            "isCircularRoute": false,
+            "isCancelled": false,
+            "filterLocationCancelled": false,
+            "serviceType": "train",
+            "length": 0,
+            "detachFront": false,
+            "isReverseFormation": false,
+            "serviceID": "2480928STKP____"
+        },
+        {
+            "subsequentCallingPoints": [
+                {
+                    "callingPoint": [
+                        {
+                            "locationName": "Sheffield",
+                            "crs": "SHF",
+                            "st": "16:08",
+                            "et": "On time",
+                            "isCancelled": false,
+                            "length": 6,
+                            "detachFront": false,
+                            "affectedByDiversion": false,
+                            "rerouteDelay": 0
+                        },
+                        {
+                            "locationName": "Meadowhall",
+                            "crs": "MHS",
+                            "st": "16:16",
+                            "et": "On time",
+                            "isCancelled": false,
+                            "length": 6,
+                            "detachFront": false,
+                            "affectedByDiversion": false,
+                            "rerouteDelay": 0
+                        },
+                        {
+                            "locationName": "Doncaster",
+                            "crs": "DON",
+                            "st": "16:35",
+                            "et": "On time",
+                            "isCancelled": false,
+                            "length": 6,
+                            "detachFront": false,
+                            "affectedByDiversion": false,
+                            "rerouteDelay": 0
+                        },
+                        {
+                            "locationName": "Scunthorpe",
+                            "crs": "SCU",
+                            "st": "17:02",
+                            "et": "On time",
+                            "isCancelled": false,
+                            "length": 6,
+                            "detachFront": false,
+                            "affectedByDiversion": false,
+                            "rerouteDelay": 0
+                        },
+                        {
+                            "locationName": "Barnetby",
+                            "crs": "BTB",
+                            "st": "17:17",
+                            "et": "On time",
+                            "isCancelled": false,
+                            "length": 6,
+                            "detachFront": false,
+                            "affectedByDiversion": false,
+                            "rerouteDelay": 0
+                        },
+                        {
+                            "locationName": "Habrough",
+                            "crs": "HAB",
+                            "st": "17:26",
+                            "et": "On time",
+                            "isCancelled": false,
+                            "length": 6,
+                            "detachFront": false,
+                            "affectedByDiversion": false,
+                            "rerouteDelay": 0
+                        },
+                        {
+                            "locationName": "Grimsby Town",
+                            "crs": "GMB",
+                            "st": "17:40",
+                            "et": "On time",
+                            "isCancelled": false,
+                            "length": 6,
+                            "detachFront": false,
+                            "affectedByDiversion": false,
+                            "rerouteDelay": 0
+                        },
+                        {
+                            "locationName": "Cleethorpes",
+                            "crs": "CLE",
+                            "st": "17:52",
+                            "et": "On time",
+                            "isCancelled": false,
+                            "length": 6,
+                            "detachFront": false,
+                            "affectedByDiversion": false,
+                            "rerouteDelay": 0
+                        }
+                    ],
+                    "serviceType": "train",
+                    "serviceChangeRequired": false,
+                    "assocIsCancelled": false
+                }
+            ],
+            "futureCancellation": false,
+            "futureDelay": false,
+            "origin": [
+                {
+                    "locationName": "Manchester Piccadilly",
+                    "crs": "MAN",
+                    "assocIsCancelled": false
+                }
+            ],
+            "destination": [
+                {
+                    "locationName": "Cleethorpes",
+                    "crs": "CLE",
+                    "assocIsCancelled": false
+                }
+            ],
+            "rsid": "TP604000",
+            "std": "15:25",
+            "etd": "On time",
+            "platform": "1",
+            "operator": "TransPennine Express",
+            "operatorCode": "TP",
+            "isCircularRoute": false,
+            "isCancelled": false,
+            "filterLocationCancelled": false,
+            "serviceType": "train",
+            "length": 6,
+            "detachFront": false,
+            "isReverseFormation": false,
+            "serviceID": "2474765STKP____"
+        },
+        {
+            "subsequentCallingPoints": [
+                {
+                    "callingPoint": [
+                        {
+                            "locationName": "Manchester Piccadilly",
+                            "crs": "MAN",
+                            "st": "15:35",
+                            "et": "On time",
+                            "isCancelled": false,
+                            "length": 0,
+                            "detachFront": false,
+                            "affectedByDiversion": false,
+                            "rerouteDelay": 0
+                        },
+                        {
+                            "locationName": "Manchester Oxford Road",
+                            "crs": "MCO",
+                            "st": "15:39",
+                            "et": "On time",
+                            "isCancelled": false,
+                            "length": 0,
+                            "detachFront": false,
+                            "affectedByDiversion": false,
+                            "rerouteDelay": 0
+                        },
+                        {
+                            "locationName": "Warrington Central",
+                            "crs": "WAC",
+                            "st": "15:58",
+                            "et": "On time",
+                            "isCancelled": false,
+                            "length": 0,
+                            "detachFront": false,
+                            "affectedByDiversion": false,
+                            "rerouteDelay": 0
+                        },
+                        {
+                            "locationName": "Widnes",
+                            "crs": "WID",
+                            "st": "16:06",
+                            "et": "On time",
+                            "isCancelled": false,
+                            "length": 0,
+                            "detachFront": false,
+                            "affectedByDiversion": false,
+                            "rerouteDelay": 0
+                        },
+                        {
+                            "locationName": "Liverpool South Parkway",
+                            "crs": "LPY",
+                            "st": "16:17",
+                            "et": "On time",
+                            "isCancelled": false,
+                            "length": 0,
+                            "detachFront": false,
+                            "affectedByDiversion": false,
+                            "rerouteDelay": 0
+                        },
+                        {
+                            "locationName": "Liverpool Lime Street",
+                            "crs": "LIV",
+                            "st": "16:29",
+                            "et": "On time",
+                            "isCancelled": false,
+                            "length": 0,
+                            "detachFront": false,
+                            "affectedByDiversion": false,
+                            "rerouteDelay": 0
+                        }
+                    ],
+                    "serviceType": "train",
+                    "serviceChangeRequired": false,
+                    "assocIsCancelled": false
+                }
+            ],
+            "futureCancellation": false,
+            "futureDelay": false,
+            "origin": [
+                {
+                    "locationName": "Norwich",
+                    "crs": "NRW",
+                    "assocIsCancelled": false
+                }
+            ],
+            "destination": [
+                {
+                    "locationName": "Liverpool Lime Street",
+                    "crs": "LIV",
+                    "assocIsCancelled": false
+                }
+            ],
+            "std": "15:25",
+            "etd": "On time",
+            "platform": "3",
+            "operator": "East Midlands Railway",
+            "operatorCode": "EM",
+            "isCircularRoute": false,
+            "isCancelled": false,
+            "filterLocationCancelled": false,
+            "serviceType": "train",
+            "length": 0,
+            "detachFront": false,
+            "isReverseFormation": false,
+            "serviceID": "2486614STKP____"
+        },
+        {
+            "subsequentCallingPoints": [
+                {
+                    "callingPoint": [
+                        {
+                            "locationName": "Heaton Chapel",
+                            "crs": "HTC",
+                            "st": "15:30",
+                            "et": "On time",
+                            "isCancelled": false,
+                            "length": 0,
+                            "detachFront": false,
+                            "affectedByDiversion": false,
+                            "rerouteDelay": 0
+                        },
+                        {
+                            "locationName": "Levenshulme",
+                            "crs": "LVM",
+                            "st": "15:33",
+                            "et": "On time",
+                            "isCancelled": false,
+                            "length": 0,
+                            "detachFront": false,
+                            "affectedByDiversion": false,
+                            "rerouteDelay": 0
+                        },
+                        {
+                            "locationName": "Manchester Piccadilly",
+                            "crs": "MAN",
+                            "st": "15:40",
+                            "et": "On time",
+                            "isCancelled": false,
+                            "length": 0,
+                            "detachFront": false,
+                            "affectedByDiversion": false,
+                            "rerouteDelay": 0
+                        }
+                    ],
+                    "serviceType": "train",
+                    "serviceChangeRequired": false,
+                    "assocIsCancelled": false
+                }
+            ],
+            "futureCancellation": false,
+            "futureDelay": false,
+            "origin": [
+                {
+                    "locationName": "Crewe",
+                    "crs": "CRE",
+                    "assocIsCancelled": false
+                }
+            ],
+            "destination": [
+                {
+                    "locationName": "Manchester Piccadilly",
+                    "crs": "MAN",
+                    "assocIsCancelled": false
+                }
+            ],
+            "std": "15:26",
+            "etd": "15:28",
+            "platform": "4",
+            "operator": "Northern",
+            "operatorCode": "NT",
+            "isCircularRoute": false,
+            "isCancelled": false,
+            "filterLocationCancelled": false,
+            "serviceType": "train",
+            "length": 0,
+            "detachFront": false,
+            "isReverseFormation": false,
+            "serviceID": "2485662STKP____"
+        }
+    ],
+    "Xmlns": {
+        "Count": 8
+    },
+    "generatedAt": "2025-11-11T15:12:17.3268976+00:00",
+    "locationName": "Stockport",
+    "crs": "SPT",
+    "filterType": "to",
+    "nrccMessages": [
+        {
+            "Value": "\nTrains between Birmingham New Street and Droitwich Spa / Cheltenham Spa may be delayed by up to 30 minutes, revised or cancelled. Latest information can be found in <a href=\"https://www.nationalrail.co.uk/service-disruptions/birmingham-new-street-20251111/\">Status and Disruptions</a>."
+        }
+    ],
+    "platformAvailable": true,
+    "areServicesAvailable": true
+}
