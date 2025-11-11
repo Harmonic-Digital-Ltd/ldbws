@@ -9,6 +9,8 @@ final readonly class ServiceLocation implements Station
     public function __construct(
         public string $locationName,
         public string $crs,
+        public ?string $via = null,
+        public ?string $futureChangeTo = null,
         public bool $assocIsCancelled = false,
     ) {}
 

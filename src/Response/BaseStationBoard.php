@@ -4,10 +4,7 @@ declare(strict_types=1);
 
 namespace HarmonicDigital\Ldbws\Response;
 
-/**
- * Root model for realtime trains details response.
- */
-final readonly class StationBoardWithDetails extends BaseStationBoard
+abstract readonly class BaseStationBoard implements Station
 {
     public function __construct(
         public \DateTimeImmutable $generatedAt,
@@ -20,11 +17,17 @@ final readonly class StationBoardWithDetails extends BaseStationBoard
         public array $nrccMessages = [],
         public bool $platformAvailable = false,
         public bool $areServicesAvailable = true,
-        /** @var list<ServiceItemWithCallingPoints> */
-        public array $trainServices = [],
-        /** @var list<ServiceItemWithCallingPoints> */
-        public array $busServices = [],
-        /** @var list<ServiceItemWithCallingPoints> */
-        public array $ferryServices = [],
     ) {}
+
+    #[\Override]
+    public function getName(): string
+    {
+        return $this->locationName;
+    }
+
+    #[\Override]
+    public function getCrs(): string
+    {
+        return $this->crs;
+    }
 }

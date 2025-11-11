@@ -4,29 +4,70 @@ declare(strict_types=1);
 
 namespace HarmonicDigital\Ldbws\Response;
 
-final readonly class ServiceItemWithCallingPoints
+final readonly class ServiceItemWithCallingPoints extends ServiceItem
 {
+    /**
+     * @param list<ServiceLocation> $origin
+     * @param list<ServiceLocation> $destination
+     * @param list<ServiceLocation> $currentOrigins
+     * @param list<ServiceLocation> $currentDestinations
+     * @param list<string>          $adhocAlerts
+     */
     public function __construct(
-        public string $serviceID,
-        /** @var list<ServiceLocation> */
-        public array $origin = [],
-        /** @var list<ServiceLocation> */
-        public array $destination = [],
+        /** @var list<ArrayOfCallingPoints> */
+        public array $previousCallingPoints = [],
         /** @var list<ArrayOfCallingPoints> */
         public array $subsequentCallingPoints = [],
-        public bool $futureCancellation = false,
-        public bool $futureDelay = false,
-        public ?\DateTimeImmutable $std = null,
-        public ?\DateTimeImmutable $etd = null,
-        public ?string $platform = null,
-        public ?string $operator = null,
-        public ?string $operatorCode = null,
-        public bool $isCircularRoute = false,
-        public bool $isCancelled = false,
-        public bool $filterLocationCancelled = false,
-        public ?string $serviceType = null,
-        public int $length = 0,
-        public bool $detachFront = false,
-        public bool $isReverseFormation = false,
-    ) {}
+        string $serviceID,
+        ?FormationData $formation = null,
+        array $origin = [],
+        array $destination = [],
+        array $currentOrigins = [],
+        array $currentDestinations = [],
+        ?string $rsid = null,
+        ?string $sta = null,
+        ?string $eta = null,
+        ?string $std = null,
+        ?string $etd = null,
+        ?string $platform = null,
+        ?string $operator = null,
+        ?string $operatorCode = null,
+        bool $isCircularRoute = false,
+        bool $isCancelled = false,
+        bool $filterLocationCancelled = false,
+        ?ServiceType $serviceType = null,
+        int $length = 0,
+        bool $detachFront = false,
+        bool $isReverseFormation = false,
+        ?string $cancelReason = null,
+        ?string $delayReason = null,
+        array $adhocAlerts = [],
+    ) {
+        parent::__construct(
+            serviceID: $serviceID,
+            formation: $formation,
+            origin: $origin,
+            destination: $destination,
+            currentOrigins: $currentOrigins,
+            currentDestinations: $currentDestinations,
+            rsid: $rsid,
+            sta: $sta,
+            eta: $eta,
+            std: $std,
+            etd: $etd,
+            platform: $platform,
+            operator: $operator,
+            operatorCode: $operatorCode,
+            isCircularRoute: $isCircularRoute,
+            isCancelled: $isCancelled,
+            filterLocationCancelled: $filterLocationCancelled,
+            serviceType: $serviceType,
+            length: $length,
+            detachFront: $detachFront,
+            isReverseFormation: $isReverseFormation,
+            cancelReason: $cancelReason,
+            delayReason: $delayReason,
+            adhocAlerts: $adhocAlerts,
+        );
+    }
 }

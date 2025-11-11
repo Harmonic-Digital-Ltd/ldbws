@@ -1,0 +1,436 @@
+{
+    "trainServices": [
+        {
+            "futureCancellation": false,
+            "futureDelay": false,
+            "origin": [
+                {
+                    "locationName": "London Euston",
+                    "crs": "EUS",
+                    "assocIsCancelled": false
+                }
+            ],
+            "destination": [
+                {
+                    "locationName": "Birmingham New Street",
+                    "crs": "BHM",
+                    "assocIsCancelled": false
+                }
+            ],
+            "std": "14:10",
+            "etd": "On time",
+            "operator": "Avanti West Coast",
+            "operatorCode": "VT",
+            "isCircularRoute": false,
+            "isCancelled": false,
+            "filterLocationCancelled": false,
+            "serviceType": "train",
+            "length": 0,
+            "detachFront": false,
+            "isReverseFormation": false,
+            "serviceID": "2463539EUSTON__"
+        },
+        {
+            "futureCancellation": false,
+            "futureDelay": false,
+            "origin": [
+                {
+                    "locationName": "London Euston",
+                    "crs": "EUS",
+                    "assocIsCancelled": false
+                }
+            ],
+            "destination": [
+                {
+                    "locationName": "Manchester Piccadilly",
+                    "crs": "MAN",
+                    "assocIsCancelled": false
+                }
+            ],
+            "std": "14:13",
+            "etd": "On time",
+            "platform": "3",
+            "operator": "Avanti West Coast",
+            "operatorCode": "VT",
+            "isCircularRoute": false,
+            "isCancelled": false,
+            "filterLocationCancelled": false,
+            "serviceType": "train",
+            "length": 0,
+            "detachFront": false,
+            "isReverseFormation": false,
+            "serviceID": "2481112EUSTON__"
+        },
+        {
+            "futureCancellation": false,
+            "futureDelay": false,
+            "origin": [
+                {
+                    "locationName": "London Euston",
+                    "crs": "EUS",
+                    "assocIsCancelled": false
+                }
+            ],
+            "destination": [
+                {
+                    "locationName": "Birmingham New Street",
+                    "crs": "BHM",
+                    "assocIsCancelled": false
+                }
+            ],
+            "rsid": "VT523000",
+            "std": "14:14",
+            "etd": "On time",
+            "platform": "4",
+            "operator": "Avanti West Coast",
+            "operatorCode": "VT",
+            "isCircularRoute": false,
+            "isCancelled": false,
+            "filterLocationCancelled": false,
+            "serviceType": "train",
+            "length": 0,
+            "detachFront": false,
+            "isReverseFormation": false,
+            "serviceID": "2460183EUSTON__"
+        },
+        {
+            "futureCancellation": false,
+            "futureDelay": false,
+            "origin": [
+                {
+                    "locationName": "London Euston",
+                    "crs": "EUS",
+                    "assocIsCancelled": false
+                }
+            ],
+            "destination": [
+                {
+                    "locationName": "Watford Junction",
+                    "crs": "WFJ",
+                    "assocIsCancelled": false
+                }
+            ],
+            "std": "14:15",
+            "etd": "On time",
+            "operator": "London Overground",
+            "operatorCode": "LO",
+            "isCircularRoute": false,
+            "isCancelled": false,
+            "filterLocationCancelled": false,
+            "serviceType": "train",
+            "length": 0,
+            "detachFront": false,
+            "isReverseFormation": false,
+            "serviceID": "2466137EUSTON__"
+        },
+        {
+            "formation": {
+                "coaches": [
+                    {
+                        "coachClass": "Standard",
+                        "loadingSpecified": false,
+                        "number": "A1"
+                    },
+                    {
+                        "coachClass": "Standard",
+                        "toilet": {
+                            "status": "InService",
+                            "Value": "Accessible"
+                        },
+                        "loadingSpecified": false,
+                        "number": "A2"
+                    },
+                    {
+                        "coachClass": "Standard",
+                        "toilet": {
+                            "status": "InService",
+                            "Value": "Standard"
+                        },
+                        "loadingSpecified": false,
+                        "number": "A3"
+                    },
+                    {
+                        "coachClass": "Standard",
+                        "loadingSpecified": false,
+                        "number": "A4"
+                    },
+                    {
+                        "coachClass": "Standard",
+                        "loadingSpecified": false,
+                        "number": "B1"
+                    },
+                    {
+                        "coachClass": "Standard",
+                        "toilet": {
+                            "status": "InService",
+                            "Value": "Standard"
+                        },
+                        "loadingSpecified": false,
+                        "number": "B2"
+                    },
+                    {
+                        "coachClass": "Standard",
+                        "toilet": {
+                            "status": "InService",
+                            "Value": "Accessible"
+                        },
+                        "loadingSpecified": false,
+                        "number": "B3"
+                    },
+                    {
+                        "coachClass": "Standard",
+                        "loadingSpecified": false,
+                        "number": "B4"
+                    }
+                ]
+            },
+            "futureCancellation": false,
+            "futureDelay": false,
+            "origin": [
+                {
+                    "locationName": "London Euston",
+                    "crs": "EUS",
+                    "assocIsCancelled": false
+                }
+            ],
+            "destination": [
+                {
+                    "locationName": "Birmingham New Street",
+                    "crs": "BHM",
+                    "via": "via Northampton",
+                    "assocIsCancelled": false
+                }
+            ],
+            "std": "14:23",
+            "etd": "On time",
+            "platform": "12",
+            "operator": "West Midlands Trains",
+            "operatorCode": "LM",
+            "isCircularRoute": false,
+            "isCancelled": false,
+            "filterLocationCancelled": false,
+            "serviceType": "train",
+            "length": 0,
+            "detachFront": false,
+            "isReverseFormation": false,
+            "serviceID": "2487571EUSTON__"
+        },
+        {
+            "formation": {
+                "coaches": [
+                    {
+                        "coachClass": "Standard",
+                        "toilet": {
+                            "status": "InService",
+                            "Value": "Accessible"
+                        },
+                        "loadingSpecified": false,
+                        "number": "A1"
+                    },
+                    {
+                        "coachClass": "Standard",
+                        "toilet": {
+                            "status": "InService",
+                            "Value": "Standard"
+                        },
+                        "loadingSpecified": false,
+                        "number": "A2"
+                    },
+                    {
+                        "coachClass": "Standard",
+                        "loadingSpecified": false,
+                        "number": "A3"
+                    },
+                    {
+                        "coachClass": "Standard",
+                        "loadingSpecified": false,
+                        "number": "B1"
+                    },
+                    {
+                        "coachClass": "Standard",
+                        "toilet": {
+                            "status": "InService",
+                            "Value": "Accessible"
+                        },
+                        "loadingSpecified": false,
+                        "number": "B2"
+                    },
+                    {
+                        "coachClass": "Standard",
+                        "toilet": {
+                            "status": "InService",
+                            "Value": "Standard"
+                        },
+                        "loadingSpecified": false,
+                        "number": "B3"
+                    },
+                    {
+                        "coachClass": "Standard",
+                        "loadingSpecified": false,
+                        "number": "B4"
+                    }
+                ]
+            },
+            "futureCancellation": false,
+            "futureDelay": false,
+            "origin": [
+                {
+                    "locationName": "London Euston",
+                    "crs": "EUS",
+                    "assocIsCancelled": false
+                }
+            ],
+            "destination": [
+                {
+                    "locationName": "Tring",
+                    "crs": "TRI",
+                    "via": "via Watford Junction",
+                    "assocIsCancelled": false
+                }
+            ],
+            "rsid": "LM324400",
+            "std": "14:25",
+            "etd": "On time",
+            "operator": "West Midlands Trains",
+            "operatorCode": "LM",
+            "isCircularRoute": false,
+            "isCancelled": false,
+            "filterLocationCancelled": false,
+            "serviceType": "train",
+            "length": 0,
+            "detachFront": false,
+            "isReverseFormation": false,
+            "serviceID": "2457180EUSTON__"
+        },
+        {
+            "futureCancellation": false,
+            "futureDelay": false,
+            "origin": [
+                {
+                    "locationName": "London Euston",
+                    "crs": "EUS",
+                    "assocIsCancelled": false
+                }
+            ],
+            "destination": [
+                {
+                    "locationName": "Glasgow Central",
+                    "crs": "GLC",
+                    "assocIsCancelled": false
+                }
+            ],
+            "std": "14:30",
+            "etd": "On time",
+            "operator": "Avanti West Coast",
+            "operatorCode": "VT",
+            "isCircularRoute": false,
+            "isCancelled": false,
+            "filterLocationCancelled": false,
+            "serviceType": "train",
+            "length": 0,
+            "detachFront": false,
+            "isReverseFormation": false,
+            "serviceID": "2481205EUSTON__"
+        },
+        {
+            "futureCancellation": false,
+            "futureDelay": false,
+            "origin": [
+                {
+                    "locationName": "London Euston",
+                    "crs": "EUS",
+                    "assocIsCancelled": false
+                }
+            ],
+            "destination": [
+                {
+                    "locationName": "Watford Junction",
+                    "crs": "WFJ",
+                    "assocIsCancelled": false
+                }
+            ],
+            "std": "14:30",
+            "etd": "On time",
+            "operator": "London Overground",
+            "operatorCode": "LO",
+            "isCircularRoute": false,
+            "isCancelled": false,
+            "filterLocationCancelled": false,
+            "serviceType": "train",
+            "length": 0,
+            "detachFront": false,
+            "isReverseFormation": false,
+            "serviceID": "2466141EUSTON__"
+        },
+        {
+            "futureCancellation": false,
+            "futureDelay": false,
+            "origin": [
+                {
+                    "locationName": "London Euston",
+                    "crs": "EUS",
+                    "assocIsCancelled": false
+                }
+            ],
+            "destination": [
+                {
+                    "locationName": "Manchester Piccadilly",
+                    "crs": "MAN",
+                    "via": "via Wilmslow",
+                    "assocIsCancelled": false
+                }
+            ],
+            "std": "14:33",
+            "etd": "On time",
+            "operator": "Avanti West Coast",
+            "operatorCode": "VT",
+            "isCircularRoute": false,
+            "isCancelled": false,
+            "filterLocationCancelled": false,
+            "serviceType": "train",
+            "length": 0,
+            "detachFront": false,
+            "isReverseFormation": false,
+            "serviceID": "2463463EUSTON__"
+        },
+        {
+            "futureCancellation": false,
+            "futureDelay": false,
+            "origin": [
+                {
+                    "locationName": "London Euston",
+                    "crs": "EUS",
+                    "assocIsCancelled": false
+                }
+            ],
+            "destination": [
+                {
+                    "locationName": "Milton Keynes Central",
+                    "crs": "MKC",
+                    "assocIsCancelled": false
+                }
+            ],
+            "std": "14:39",
+            "etd": "On time",
+            "operator": "West Midlands Trains",
+            "operatorCode": "LM",
+            "isCircularRoute": false,
+            "isCancelled": false,
+            "filterLocationCancelled": false,
+            "serviceType": "train",
+            "length": 0,
+            "detachFront": false,
+            "isReverseFormation": false,
+            "serviceID": "2488181EUSTON__"
+        }
+    ],
+    "Xmlns": {
+        "Count": 8
+    },
+    "generatedAt": "2025-11-11T14:10:40.4222556+00:00",
+    "locationName": "London Euston",
+    "crs": "EUS",
+    "filterType": "to",
+    "platformAvailable": true,
+    "areServicesAvailable": true
+}

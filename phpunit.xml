@@ -12,8 +12,14 @@
          failOnRisky="true"
          failOnWarning="true">
     <testsuites>
-        <testsuite name="LDBWS Tests">
-            <directory>tests</directory>
+        <testsuite name="LDBWS Unit Tests">
+            <directory>tests/Unit</directory>
+        </testsuite>
+        <testsuite name="LDBWS Functional Tests">
+            <directory>tests/Functional</directory>
+        </testsuite>
+        <testsuite name="LDBWS Integration Tests">
+            <directory>tests/Integration</directory>
         </testsuite>
     </testsuites>
 

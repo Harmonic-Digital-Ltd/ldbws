@@ -9,5 +9,8 @@ final readonly class ArrayOfCallingPoints
     public function __construct(
         /** @var list<CallingPoint> */
         public array $callingPoint = [],
+        public ?ServiceType $serviceType = null,
+        public bool $serviceChangeRequired = false,
+        public bool $assocIsCancelled = false,
     ) {}
 }

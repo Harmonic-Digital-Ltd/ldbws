@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-$finder = new PhpCsFixer\Finder()
+$finder = (new PhpCsFixer\Finder())
     ->in(__DIR__)
 ;
 
-return new PhpCsFixer\Config()
+return (new PhpCsFixer\Config())
     ->setRules([
         '@PhpCsFixer' => true,
     ])

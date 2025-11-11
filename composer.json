@@ -23,11 +23,21 @@
         }
     ],
     "require": {
-        "psr/http-client": "^1.0"
+        "php": "^8.3",
+        "psr/clock": "^1.0",
+        "psr/http-client": "^1.0",
+        "psr/log": "^3.0"
     },
     "require-dev": {
-        "vimeo/psalm": "^6.13",
+        "friendsofphp/php-cs-fixer": "^3.89",
+        "guzzlehttp/guzzle": "^7.10",
+        "monolog/monolog": "^3.9",
         "phpunit/phpunit": "^12.4",
-        "friendsofphp/php-cs-fixer": "^3.89"
+        "vimeo/psalm": "^6.13"
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "check": "vendor/bin/psalm",
+        "fix": "vendor/bin/php-cs-fixer fix"
     }
 }

@@ -7,7 +7,7 @@ namespace HarmonicDigital\Ldbws\Response;
 final readonly class ToiletAvailabilityType
 {
     public function __construct(
-        public string $status,
-        public string $value,
+        public ToiletStatus $status,
+        public ToiletType $value,
     ) {}
 }
