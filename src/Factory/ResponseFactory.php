@@ -22,6 +22,8 @@ use HarmonicDigital\Ldbws\Response\StationBoardWithDetails;
 use HarmonicDigital\Ldbws\Response\ToiletAvailabilityType;
 use HarmonicDigital\Ldbws\Response\ToiletStatus;
 use HarmonicDigital\Ldbws\Response\ToiletType;
+use HarmonicDigital\Ldbws\Response\UncertaintyType;
+use HarmonicDigital\Ldbws\Response\UncertaintyTypeStatus;
 
 /** @psalm-suppress MixedArgument */
 final class ResponseFactory implements ResponseFactoryInterface
@@ -99,8 +101,22 @@ final class ResponseFactory implements ResponseFactoryInterface
             $data['delayReason'] ?? null,
             $data['adhocAlerts'] ?? [],
             \is_array($data['formation'] ?? null) ? $this->parseFormationData($data['formation']) : null,
+            $this->parseUncertaintyType($data['uncertainty'] ?? null),
+            $data['affectedBy'] ?? null,
             \array_map($this->parseArrayOfCallingPoints(...), \array_values($data['previousCallingPoints'] ?? [])),
             \array_map($this->parseArrayOfCallingPoints(...), \array_values($data['subsequentCallingPoints'] ?? [])),
+        );
+    }
+
+    private function parseUncertaintyType(?array $data): ?UncertaintyType
+    {
+        if (null === $data) {
+            return null;
+        }
+
+        return new UncertaintyType(
+            UncertaintyTypeStatus::tryFrom($data['type'] ?? '') ?? UncertaintyTypeStatus::OTHER,
+            $data['value'] ?? '',
         );
     }
 
@@ -119,11 +135,11 @@ final class ResponseFactory implements ResponseFactoryInterface
         return new CallingPoint(
             $data['locationName'],
             $data['crs'],
-            $data['st'],
-            $data['et'],
-            $data['at'],
-            $data['isCancelled'],
-            $data['length'],
+            $data['st'] ?? null,
+            $data['et'] ?? null,
+            $data['at'] ?? null,
+            $data['isCancelled'] ?? false,
+            $data['length'] ?? 0,
             $data['detachFront'] ?? false,
             $this->parseFormationData($data['formation'] ?? null),
             $data['affectedByDiversion'] ?? false,

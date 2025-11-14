@@ -39,7 +39,6 @@ use PHPUnit\Framework\TestCase;
 #[CoversClass(CallingPoint::class)]
 #[CoversClass(NRCCMessage::class)]
 #[CoversClass(ServiceItemWithCallingPoints::class)]
-#[CoversClass(ServiceLocation::class)]
 #[CoversClass(StationBoardWithDetails::class)]
 final class ResponseFactoryTest extends TestCase
 {
@@ -116,7 +115,7 @@ final class ResponseFactoryTest extends TestCase
         $this->assertSame(ToiletType::UNKNOWN, $formation->coaches[1]->toilet->value);
     }
 
-    public function testParseDepartureBoardWitjDetailsResponse(): void
+    public function testParseDepartureBoardWithDetailsResponse(): void
     {
         $json = json_decode(
             file_get_contents(__DIR__.'/../../Fixtures/Response/getDepBoardWithDetails/SPT.json'),

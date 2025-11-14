@@ -36,5 +36,7 @@ readonly class ServiceItem
         /** @var list<string> */
         public array $adhocAlerts = [],
         public ?FormationData $formation = null,
+        public ?UncertaintyType $uncertainty = null,
+        public ?string $affectedBy = null,
     ) {}
 }

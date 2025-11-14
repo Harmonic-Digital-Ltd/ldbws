@@ -1,0 +1,8 @@
+{
+    "fault": {
+        "faultstring": "Failed to resolve API Key variable request.header.x-apikey",
+        "detail": {
+            "errorcode": "steps.oauth.v2.FailedToResolveAPIKey"
+        }
+    }
+}

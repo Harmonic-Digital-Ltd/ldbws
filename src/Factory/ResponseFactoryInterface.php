@@ -14,5 +14,6 @@ interface ResponseFactoryInterface
      * @throws UnparseableResponseException
      */
     public function parseStationBoard(array $data): StationBoard;
+
     public function parseStationBoardWithDetails(array $data): StationBoardWithDetails;
 }

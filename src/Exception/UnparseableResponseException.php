@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace HarmonicDigital\Ldbws\Exception;
 
-final class UnparseableResponseException extends \RuntimeException
+final class UnparseableResponseException extends \RuntimeException implements LdbwsException
 {
     /** @param class-string $class */
     public function __construct(private readonly string $class, int $code = 0, ?\Throwable $previous = null)

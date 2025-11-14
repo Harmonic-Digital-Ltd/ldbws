@@ -6,7 +6,9 @@ namespace HarmonicDigital\Ldbws;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
-use GuzzleHttp\Exception\GuzzleException;
+use GuzzleHttp\Exception\RequestException;
+use HarmonicDigital\Ldbws\Exception\LdbwsFaultException;
+use HarmonicDigital\Ldbws\Exception\LdbwsUnknownException;
 use HarmonicDigital\Ldbws\Exception\UnparseableResponseException;
 use HarmonicDigital\Ldbws\Factory\ResponseFactory;
 use HarmonicDigital\Ldbws\Factory\ResponseFactoryInterface;
@@ -43,13 +45,18 @@ final readonly class LdbwsClient
         ?int $timeWindow = null,
     ): StationBoard {
         $url = self::BASE_URL.'/GetDepartureBoard/'.$crs;
-        $data = $this->makeRequest($url, [
-            'numRows' => $numRows,
-            'filterCrs' => $filterCrs,
-            'filterType' => $filterType?->value,
-            'timeOffset' => $timeOffset,
-            'timeWindow' => $timeWindow,
-        ]);
+
+        try {
+            $data = $this->makeRequest($url, [
+                'numRows' => $numRows,
+                'filterCrs' => $filterCrs,
+                'filterType' => $filterType?->value,
+                'timeOffset' => $timeOffset,
+                'timeWindow' => $timeWindow,
+            ]);
+        } catch (\JsonException $e) {
+            throw new UnparseableResponseException(StationBoard::class, $e->getCode(), $e);
+        }
 
         return $this->responseFactory->parseStationBoard($data);
     }
@@ -63,13 +70,18 @@ final readonly class LdbwsClient
         ?int $timeWindow = null,
     ): StationBoardWithDetails {
         $url = self::BASE_URL.'/GetDepBoardWithDetails/'.$crs;
-        $data = $this->makeRequest($url, [
-            'numRows' => $numRows,
-            'filterCrs' => $filterCrs,
-            'filterType' => $filterType?->value,
-            'timeOffset' => $timeOffset,
-            'timeWindow' => $timeWindow,
-        ]);
+
+        try {
+            $data = $this->makeRequest($url, [
+                'numRows' => $numRows,
+                'filterCrs' => $filterCrs,
+                'filterType' => $filterType?->value,
+                'timeOffset' => $timeOffset,
+                'timeWindow' => $timeWindow,
+            ]);
+        } catch (\JsonException $e) {
+            throw new UnparseableResponseException(StationBoardWithDetails::class, $e->getCode(), $e);
+        }
 
         return $this->responseFactory->parseStationBoardWithDetails($data);
     }
@@ -77,7 +89,8 @@ final readonly class LdbwsClient
     /**
      * @return array<string, mixed>
      *
-     * @throws GuzzleException
+     * @throws LdbwsFaultException
+     * @throws LdbwsUnknownException
      * @throws \JsonException
      */
     private function makeRequest(string $uri, array $queryParams = [], string $method = 'GET'): array
@@ -89,13 +102,51 @@ final readonly class LdbwsClient
             'query_params' => $queryParams,
         ];
         $this->logger->debug('-> '.$uri, $context);
-        $response = $this->client->request($method, $uri, [
-            'headers' => [
-                'x-apikey' => $this->apiKey,
-                'accept' => 'application/json',
-            ],
-            'query' => $queryParams,
-        ]);
+
+        try {
+            $response = $this->client->request($method, $uri, [
+                'headers' => [
+                    'x-apikey' => $this->apiKey,
+                    'accept' => 'application/json',
+                ],
+                'query' => $queryParams,
+            ]);
+        } catch (\Throwable $e) {
+            $context['exception'] = $e;
+            $context['exception_class'] = $e::class;
+            $context['exception_message'] = $e->getMessage();
+            if ($e instanceof RequestException) {
+                $response = $e->getResponse();
+                if (null !== $response) {
+                    $respBody = (string) $response->getBody();
+                    $context['body'] = $respBody;
+                    $context['status_code'] = $response->getStatusCode();
+                    $context['exception'] = $e;
+
+                    try {
+                        /** @var array<string, mixed> $decoded */
+                        $decoded = \json_decode($respBody, true, 512, \JSON_THROW_ON_ERROR);
+                        if (\is_array($decoded)
+                            && isset($decoded['fault'])
+                            && \is_array($decoded['fault'])
+                        ) {
+                            // Fault structure present
+                            throw new LdbwsFaultException(
+                                (string) $decoded['fault']['faultstring'],
+                                (string) ($decoded['fault']['detail']['errorcode'] ?? ''),
+                                $e,
+                            );
+                        }
+                    } catch (\JsonException) {
+                    }
+                }
+            }
+
+            $this->logger->error('<- '.$uri, $context);
+
+            throw new LdbwsUnknownException($e->getMessage(), (int) $e->getCode(), $e);
+        }
+
         $body = $response->getBody()->getContents();
         $context['body'] = $body;
         $context['status_code'] = $response->getStatusCode();

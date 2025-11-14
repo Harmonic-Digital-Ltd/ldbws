@@ -26,7 +26,6 @@ use PHPUnit\Framework\TestCase;
  * @internal
  */
 #[CoversClass(LdbwsClient::class)]
-#[CoversClass(LdbwsClient::class)]
 #[UsesClass(ResponseFactory::class)]
 #[UsesClass(CoachData::class)]
 #[UsesClass(FormationData::class)]

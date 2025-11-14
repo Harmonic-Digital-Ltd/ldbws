@@ -12,18 +12,18 @@
          failOnRisky="true"
          failOnWarning="true">
     <testsuites>
-        <testsuite name="LDBWS Unit Tests">
+        <testsuite name="unit">
             <directory>tests/Unit</directory>
         </testsuite>
-        <testsuite name="LDBWS Functional Tests">
+        <testsuite name="functional">
             <directory>tests/Functional</directory>
         </testsuite>
-        <testsuite name="LDBWS Integration Tests">
+        <testsuite name="integration">
             <directory>tests/Integration</directory>
         </testsuite>
     </testsuites>
 
-    <source ignoreIndirectDeprecations="true" restrictNotices="true" restrictWarnings="true">
+    <source ignoreIndirectDeprecations="true">
         <include>
             <directory>src</directory>
         </include>
