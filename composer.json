@@ -2,6 +2,7 @@
     "name": "harmonicdigital/ldbws",
     "description": "An implementation to consume the Live Departure Board Web Service by National Rail",
     "type": "library",
+    "keywords": ["rail", "ldbws", "national rail", "live departure board", "uk rail"],
     "config": {
         "sort-packages": true
     },

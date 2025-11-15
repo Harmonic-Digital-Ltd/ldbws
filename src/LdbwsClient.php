@@ -38,6 +38,7 @@ final readonly class LdbwsClient implements LdbwsClientInterface
      * @throws LdbwsFaultException
      * @throws LdbwsUnknownException
      */
+    #[\Override]
     public function getDepartureBoard(
         string $crs,
         ?int $numRows = null,
@@ -72,6 +73,7 @@ final readonly class LdbwsClient implements LdbwsClientInterface
      * @throws LdbwsFaultException
      * @throws LdbwsUnknownException
      */
+    #[\Override]
     public function getDepartureBoardWithDetails(
         string $crs,
         ?int $numRows = null,
