@@ -18,7 +18,7 @@ use HarmonicDigital\Ldbws\Response\StationBoardWithDetails;
 use Psr\Log\LoggerInterface;
 use Psr\Log\NullLogger;
 
-final readonly class LdbwsClient
+final readonly class LdbwsClient implements LdbwsClientInterface
 {
     private const string BASE_URL = 'https://api1.raildata.org.uk/1010-live-departure-board-dep1_2/LDBWS/api/20220120';
 
@@ -35,6 +35,8 @@ final readonly class LdbwsClient
      * @param null|int<-120, 120> $timeWindow
      *
      * @throws UnparseableResponseException
+     * @throws LdbwsFaultException
+     * @throws LdbwsUnknownException
      */
     public function getDepartureBoard(
         string $crs,
@@ -61,6 +63,15 @@ final readonly class LdbwsClient
         return $this->responseFactory->parseStationBoard($data);
     }
 
+    /**
+     * @param null|int<0, 150> $numRows
+     * @param null|int<-120, 120> $timeOffset
+     * @param null|int<-120, 120> $timeWindow
+     *
+     * @throws UnparseableResponseException
+     * @throws LdbwsFaultException
+     * @throws LdbwsUnknownException
+     */
     public function getDepartureBoardWithDetails(
         string $crs,
         ?int $numRows = null,
