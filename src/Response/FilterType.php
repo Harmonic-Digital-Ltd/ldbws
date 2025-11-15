@@ -6,6 +6,6 @@ namespace HarmonicDigital\Ldbws\Response;
 
 enum FilterType: string
 {
-    case To = 'to';
-    case From = 'from';
+    case TO = 'to';
+    case FROM = 'from';
 }

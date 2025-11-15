@@ -60,7 +60,7 @@ final class ResponseFactoryTest extends TestCase
 
         $this->assertSame('Stockport', $board->getName());
         $this->assertSame('SPT', $board->getCrs());
-        $this->assertSame(FilterType::To, $board->filterType);
+        $this->assertSame(FilterType::TO, $board->filterType);
         $this->assertTrue($board->platformAvailable);
         $this->assertTrue($board->areServicesAvailable);
         $this->assertEquals(
@@ -126,7 +126,7 @@ final class ResponseFactoryTest extends TestCase
 
         $this->assertSame('Stockport', $board->getName());
         $this->assertSame('SPT', $board->getCrs());
-        $this->assertSame(FilterType::To, $board->filterType);
+        $this->assertSame(FilterType::TO, $board->filterType);
         $this->assertTrue($board->platformAvailable);
         $this->assertTrue($board->areServicesAvailable);
         $this->assertEquals(
