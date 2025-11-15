@@ -11,7 +11,7 @@ final readonly class ServiceItemWithCallingPoints extends ServiceItem
      * @param list<ServiceLocation> $destination
      * @param list<ServiceLocation> $currentOrigins
      * @param list<ServiceLocation> $currentDestinations
-     * @param list<string>          $adhocAlerts
+     * @param list<string> $adhocAlerts
      */
     public function __construct(
         public string $serviceID,

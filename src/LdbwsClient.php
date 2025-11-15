@@ -30,7 +30,7 @@ final readonly class LdbwsClient implements LdbwsClientInterface
     ) {}
 
     /**
-     * @param null|int<0, 150>    $numRows
+     * @param null|int<0, 150> $numRows
      * @param null|int<-120, 120> $timeOffset
      * @param null|int<-120, 120> $timeWindow
      *
